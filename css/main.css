@@ -44,7 +44,7 @@ header li a:hover{ /* sublinha quando o mouse estiver sobre */
 
 .articles{
     display: flex; /* dispõe o conteúdo distriuido na div */
-    flex-wrap: wrap; /* disponibiliza os itens um a um dentro da div */
+    flex-wrap: wrap; /* Força a quebra de linha */
     justify-content: space-between;
 }
 
