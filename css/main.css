@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{ 
+/* DEFINE QUE MEU LAYOUT FICARÁ COM LARGURA DE 1366 NO CENTRO  */
+    width: 1366px;
+    margin: 0 auto;
+    /* border: 1px solid; */
+}
+
+body > header{
+/* DEFINE QUE MINHA BARRA SUPERIOR TEM ESSA COR, Q padding TOP=16px e o tipo de fonte */
+    background-color: darkslategray; /* Define a cor do fundo */
+    padding: 10px 0; /* define o espaçamento interno top=15px*/
+    color: #FFF; /* define a cor do texto */
+    font-family: Arial, Helvetica, sans-serif; /* define o tipo de fonte */
+}
+
+header .container{ /* CONTAINER DO HEADER */
+    display: flex; /* dispõe o conteúdo distriuido na div */
+    align-items: center; /* dispoe o conteuno alinhado no meio */
+    justify-content: space-between; /* distribui o espaço entre os elementos */
+}
+
+header li{ /* itens da lista do header */
+    display: inline; /* dispoe os itens da lista em linha */
+    font-family: Arial, Helvetica, sans-serif; /* define o tipo de fonte */
+    font-weight: bold; /* define a força da fonte */
+    margin-left: 50px;  /* da um espaçamento a esquerda de cada item da lista */
+}
+
+header li a{ /* itens da lista do header que são links */
+    color: #FFF; /* define a cor do texto */
+    font-family: Arial, Helvetica, sans-serif; /* define o tipo de fonte */
+    text-decoration: none; /* tira o sublinhado dos links */
+}
+
+header li a:hover{ /* sublinha quando o mouse estiver sobre */
+    text-decoration: underline;
+}
+
+.articles{
+    display: flex; /* dispõe o conteúdo distriuido na div */
+    flex-wrap: wrap; /* disponibiliza os itens um a um dentro da div */
+    justify-content: space-between;
+}
+
+.articles article img{
+    /* height: 500px;     */
+    width: 100%;
+}
+
+.articles article{
+    width: 25%;
+    padding: 25px;
+}
+.articles article p{
+    /* width: 60%; */
+    text-align: justify;
+}
+
+section { /* aplica nas duas seçoes Filmes e séries */
+    /* width: 20px 0; */
+}
+
+section h2,
+.articles article{ /* aplica margem abaixo dos H2 e nos artigos */
+    margin-bottom: 15px;
+}
+
+.articles article h3{ /* aplica margem acima/abaixo dos H3 */
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-family: Arial, Helvetica, sans-serif; /* define o tipo de fonte */
+    font-size: 16px;
+}
+
+.articles article a{ /* define como ficarão os links nos artigos */
+    color: #000;
+    padding: 8px;
+    margin-top: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.articles article a:hover{ /* sublinha quando o mouse estiver sobre */
+    text-decoration: underline;
+}
+
+.articles article p,
+.articles article a{
+    font-family: Arial, Helvetica, sans-serif; /* define o tipo de fonte */
+}
+
+section h2{
+    font-family: Arial, Helvetica, sans-serif; /* define o tipo de fonte */
+    font-size: 32px;
+}
+
+#filmes{
+    padding-top: 10px;
+    background-color: powderblue;
+}
+
+#series{
+    padding-top: 10px;
+    background-color: darkseagreen;
+}
+
+#filmes .articles article a{
+    background-color: cornflowerblue;
+}
+
+#series .articles article a{
+    background-color: seagreen;
+}
+
+.articles header{
+    font-family: Arial, Helvetica, sans-serif; /* define o tipo de fonte */
+    font-weight: bold;
+    font-style: italic;
+}
